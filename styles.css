@@ -6,53 +6,50 @@
 
 body {
   font-family: Gilda Display, sans-serif;
-  background-color: white; /* Background remains white */
+  background-color: white; 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 10vh;
   padding: 20px;
-  position: relative; /* Allows positioning elements freely */
+  position: relative; 
 }
 
-/* Centered heading at the top with full-width background */
 h2 {
   font-size: 30px;
   color: white;
-  background-color: #333; /* Dark gray background for the heading */
-  padding: 20px; /* Adjusted padding */
-  border-radius: 10px; /* Adjusted border-radius */
+  background-color: #333; 
+  padding: 20px; 
+  border-radius: 10px; 
   text-align: center;
   width: 100%;
   position: absolute;
-  top: 0; /* Positions heading at the very top */
+  top: 0; 
   left: 0;
   transform: translateY(0);
 }
 
-/* Introduction paragraph styling */
 .intro {
   text-align: center;
-  margin-top: 80px; /* Spacing from heading */
+  margin-top: 80px; 
 }
 
-/* Social links centered and styled */
 .social {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px; /* Spacing below the introduction */
-  margin-bottom: 20px; /* Spacing at the bottom */
+  margin-top: 20px; 
+  margin-bottom: 20px; 
 }
 
 .social-icon {
   font-size: 30px;
   color: black;
   padding: 20px;
-  border-radius: 50%; /* Rounded social icons */
+  border-radius: 50%; 
   text-align: center;
-  background-color: #f9f9f9; /* Slightly different white for social icons */
+  background-color: #f9f9f9; 
   transition: transform 0.3s;
 }
 
@@ -60,33 +57,32 @@ h2 {
   transform: scale(1.1);
 }
 
-/* Links section styling */
 .links {
   display: flex;
-  flex-direction: column; /* Vertical layout */
-  align-items: center; /* Center align links */
-  gap: 10px; /* Spacing between links */
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
 }
 
 .link-button {
   display: block;
-  background-color: #28A745; /* Background color for the buttons */
-  color: white; /* Text color */
+  background-color: #28A745; 
+  color: white; 
   text-decoration: none;
   padding: 150px 30px;
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px; 
   font-size: 18px;
   text-align: center;
   width: 100%;
-  max-width: 300px; /* Maximum width for buttons */
+  max-width: 300px; 
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .link-button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  transform: scale(1.05); /* Slight scale effect on hover */
+  background-color: #0056b3; 
+  transform: scale(1.05); 
 }
 
 .link-button span {
-  display: block; /* Ensure the span takes full width */
+  display: block; 
 }
