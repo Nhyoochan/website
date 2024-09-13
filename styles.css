@@ -1,88 +1,97 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Gilda Display, sans-serif;
-  background-color: white; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  padding: 20px;
-  position: relative; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
 }
 
-h2 {
-  font-size: 30px;
-  color: white;
-  background-color: #333; 
-  padding: 20px; 
-  border-radius: 10px; 
-  text-align: center;
-  width: 100%;
-  position: absolute;
-  top: 0; 
-  left: 0;
-  transform: translateY(0);
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
 }
 
-.intro {
-  text-align: center;
-  margin-top: 80px; 
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
-.social {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px; 
-  margin-bottom: 20px; 
+.about-me {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 20px;
 }
 
-.social-icon {
-  font-size: 30px;
-  color: black;
-  padding: 20px;
-  border-radius: 50%; 
-  text-align: center;
-  background-color: #f9f9f9; 
-  transition: transform 0.3s;
+.about-me p {
+    background-color: #f9f9f9; /* Slightly different white from your palette */
+    padding: 15px;
+    border-radius: 10px;
+    color: #333; /* Dark Gray for text */
 }
 
-.social-icon:hover {
-  transform: scale(1.1);
+.social-icons {
+    margin-bottom: 20px;
 }
 
-.links {
-  display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  gap: 10px; 
+.icon {
+    text-decoration: none;
+    color: #333; /* Dark Gray */
+    font-size: 30px;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
-.link-button {
-  display: block;
-  background-color: #28A745; 
-  color: white; 
-  text-decoration: none;
-  padding: 10px 30px;
-  border-radius: 5px; 
-  font-size: 18px;
-  text-align: center;
-  width: 100%;
-  max-width: 300px; 
-  transition: background-color 0.3s, transform 0.3s;
+.icon:hover {
+    color: #007BFF; /* Blue on hover */
 }
 
-.link-button:hover {
-  background-color: #0056b3; 
-  transform: scale(1.05); 
+.buttons {
+    text-align: center;
 }
 
-.link-button span {
-  display: block; 
+.btn {
+    display: block;
+    width: 100%; /* Full width for mobile */
+    max-width: 300px; /* Limit the width on larger screens */
+    padding: 15px;
+    margin: 10px auto; /* Center the buttons */
+    text-align: center;
+    background-color: #28A745; /* Green color from your palette */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #218838; /* Slightly darker green */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    .profile-picture img {
+        width: 120px;  /* Smaller profile picture */
+        height: 120px;
+    }
+
+    .about-me p {
+        font-size: 14px; /* Smaller font for about me text */
+        padding: 10px;
+    }
+
+    .icon {
+        font-size: 25px; /* Smaller icons for mobile */
+        margin: 0 8px;
+    }
+
+    .btn {
+        width: 90%; /* More flexible button width on smaller screens */
+        font-size: 14px; /* Adjust button font size for mobile */
+        padding: 12px;
+    }
 }
